@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --main_color: #00f9ff;
+    --gray: #f4f4f4;
+}
+
+/* Universal application */
+.main_link{
+    text-decoration: none;
+    padding: 5px 10px;
+    background: var(--main_color);
+    color: white;
+    border-radius: 50px;
+}
+
+.hero{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: url("./imgs/food1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-color: rgba(0,0,0,.4);
+    background-blend-mode: darken;
+
+    background-attachment: fixed;
+}
+
+.hero .hero-logo-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-logo-nav .hero-logo a{
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: white;
+    cursor: pointer;
+    margin: 40px;
+}
+
+.hero-logo-nav .hero-logo a span{
+    color: var(--main_color);
+    font-size: 2.6rem;
+}
+
+.hero .hero-nav ul{
+    display: flex;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.hero .hero-nav ul a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    font-size: 1.2rem;
+}
+
+.hero .hero-nav ul a:hover{
+    background: var(--main_color);
+    color: black;
+    padding: 8px;
+}
+
+.hero .hero-nav ul a span:hover{
+    color: black;
+}
+
+.hero .hero-nav ul a span{
+    color: var(--main_color);
+}
+
+.hero .hero-center-text{
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    text-align: center;
+}
+
+.hero .hero-center-text h2{
+    font-size: 2.6rem;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.hero .hero-center-text h2 .treat{
+    color: var(--main_color);
+}
+
+.hero .hero-center-text h2 .yourself{
+    border-bottom: 3px solid var(--main_color);
+}
+
+.hero .hero-center-text p{
+    font-size: 1.1rem;
+    color: white;
+}
+
+.hero .hero-center-text .next{
+    margin-bottom: 30px;
+}
+
+.hero .hero-center-text .hero-btn{
+    padding: 15px 30px;
+    color: black;
+}
+
+.hero .hero-center-text .hero-btn:hover{
+    background-color: #00d2ff;
+}
+
+
+/* Some foods */
+.food-types{
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 20vh; */
+    width: 1000px;
+    margin: 30vh auto;
+}
+
+.food-types .food-type .food-title h4{
+    font-size: 1.6rem;
+    /* opacity: .5; */
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.food-types .food-type .food img{
+    width: 300px;
+    height: 290px;
+    padding: 10px;
+}
+
+/* Events */
+.events{
+    display: flex;
+    flex-direction: column;
+    background: #f2f2f2;
+    padding-bottom: 30vh;
+}
+
+.events .top-most{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+    text-align: center;
+    color: black;
+    margin-bottom: 10vh;
+}
+
+.events .top-most h3{
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    z-index: 100;
+    /* color: black; */
+}
+
+.events .top-most h3 span{
+    color: #08B3E5;
+}
+
+.events .events-partition{
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.events .events-partition .partition-text{
+    margin-top: 30vh;
+}
+
+.events .events-partition .partition-text h3{
+    font-size: 2rem;
+    /* color: #08B3E5; */
+    color: #08B3E5;
+}
+
+.events .events-partition .partition-text h4{
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.events .events-partition .partition-text p{
+    font-size: 1rem;
+    padding-bottom: 5px;
+}
+
+.events .events-partition .partition-image img{
+    width: 690px;
+    height: 520px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* Book Table */
+.book_table{
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    padding-top: 35vh;
+    text-align: center;
+
+    background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(./imgs/drinks3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+.book_table h2{
+    font-size: 2.4rem;
+    color: white;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+}
+
+.book_table h2 span{
+    color: var(--main_color);
+}
+
+.book_table p{
+    color: white;
+    padding-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.book_table .link_holder{
+    margin-top: 3vh;
+}
+
+.book_table .link_holder a{
+    border: 1px solid white;
+    border-radius: 50px;
+    background: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.book_table .link_holder a:hover{
+    background: var(--main_color);
+    color: black;
+    border: none;
+    outline: none;
+}
+
+/* Footer */
+footer{
+    background-color: var(--main_color);
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+}
+
+footer .footer-container{
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+footer .footer-container .footer-logo{
+    flex-basis: 40%;
+}
+
+footer .footer-container .footer-logo h1{
+    font-size: 2.4rem;
+    margin-bottom: 1.5vh;
+}
+
+footer .footer-container .footer-logo h1 span{
+    color: orangered;
+}
+
+footer .footer-container .footer-logo p{
+    font-size: 1.2rem;
+}
+
+footer .footer-container .footer-texts{
+    flex-basis: 60%;
+    display: flex;
+    /* margin-left: 20px; */
+}
+
+footer .footer-container .footer-texts div{
+    margin-left: 120px;
+}
+
+footer .footer-container .footer-texts div h4{
+    font-size: 1.6rem;
+}
+
+footer .footer-container .footer-texts div p{
+    font-size: 1.1rem;
+}

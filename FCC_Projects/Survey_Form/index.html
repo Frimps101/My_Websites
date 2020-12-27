@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 id="title">Customer Satisfaction Survey</h1>
+            <p id="description">Thank you for taking our customer satisfaction survey</p>
+        </div>
+    
+        <form action="" id="survey-form">
+            <div class="requirements">
+                <label for="name-label">Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+    
+                <label for="email-label">Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+    
+                <label for="number-label">Phone</label>
+                <input type="number" id="number"min="10" max="13" placeholder="Enter your phone number">
+            </div>
+    
+            <!-- Dropdowns -->
+            <div class="dropdowns">
+                <label for="food">What do you usually order at a restaurant?</label>
+                <select name="food" id="dropdown">
+                    <option value="Fries">Fries</option>
+                    <option value="Fried rice">Fried Rice</option>
+                    <option value="Burgers">Burgers</option>
+                    <option value="Pizza">Pizza</option>
+                </select>
+            </div>
+    
+            <!-- Radio Button -->
+            <div class="radio_btns">
+                <label for="">Does income influence your choice of food?</label>
+    
+                <input type="radio" name="choice">
+                <label for="">Agree</label>
+                <input type="radio" name="choice">
+                <label for="">Strongly Agree</label>
+                <input type="radio" name="choice">
+                <label for="">Disagree</label>
+                <input type="radio" name="choice">
+                <label for="">Strongly disagree</label>
+            </div>
+    
+            <!-- Checkboxes  -->
+            <div class="checkboxes">
+                <p>Which is your favorite reataurant?</p>
+    
+                <input type="checkbox" value="kfc">
+                <label for="">KFC</label>
+    
+                <input type="checkbox" value="burger_king">
+                <label for="">Burger King</label>
+    
+                <input type="checkbox" value="mcdonald">
+                <label for="">McDonald</label>
+    
+                <input type="checkbox" value="pizza_hut">
+                <label for="">Pizza Hut</label>
+    
+                <input type="checkbox" value="popeyes">
+                <label for="">Popeyes</label>
+    
+                <input type="checkbox" value="other">
+                <label for="">Other</label>
+            </div>
+    
+            <!-- Additional Comments -->
+            <p>Do you have anything to add?</p>
+            <textarea name="" id="" cols="30" rows="10">
+                Enter your comments...
+            </textarea>
+            
+            <div class="btn">
+                <input type="submit" id="submit"></input>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

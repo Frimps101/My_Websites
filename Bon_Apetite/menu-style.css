@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --main_color: #00f9ff;
+    --gray: #f4f4f4;
+}
+
+/* Hero */
+
+.hero{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: url("./imgs/food/food2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-color: rgba(0,0,0,.4);
+    background-blend-mode: darken;
+
+    background-attachment: fixed;
+}
+
+.hero .hero-logo-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-logo-nav .hero-logo a{
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: white;
+    cursor: pointer;
+    margin: 40px;
+}
+
+.hero-logo-nav .hero-logo a span{
+    color: var(--main_color);
+    font-size: 2.6rem;
+}
+
+.hero .hero-nav ul{
+    display: flex;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.hero .hero-nav ul a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    font-size: 1.2rem;
+}
+
+.hero .hero-nav ul a:hover{
+    background: var(--main_color);
+    color: black;
+    padding: 8px;
+}
+
+.hero .hero-nav ul a span:hover{
+    color: black;
+}
+
+.hero .hero-nav ul a span{
+    color: var(--main_color);
+}
+
+.hero .hero-center-text{
+    position: absolute;
+    color: white;
+    text-align: center;
+    top: 45%;
+    left: 45%;
+}
+
+.hero .hero-center-text h1{
+    font-size: 2.8rem;
+}
+
+.hero .hero-center-text h1 span{
+    color: var(--main_color);
+}
+
+.the_menu{
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+/* Some foods */
+.food-types{
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 20vh; */
+    width: 1000px;
+    margin: 30vh auto;
+}
+
+.food-types .food-type .food-title h4{
+    font-size: 1.6rem;
+    /* opacity: .5; */
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.food-types .food-type .food img{
+    width: 300px;
+    height: 290px;
+    padding: 10px;
+}
+
+
+.menu{
+    width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 25px;
+}
+
+.menu .menu-item p{
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.menu .menu-item img{
+    width: 320px;
+    height: 300px;
+}
+
+/* Footer */
+footer{
+    background-color: var(--main_color);
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    margin-top: 20vh;
+}
+
+footer .footer-container{
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+footer .footer-container .footer-logo{
+    flex-basis: 40%;
+}
+
+footer .footer-container .footer-logo h1{
+    font-size: 2.2rem;
+    margin-bottom: 1.5vh;
+}
+
+footer .footer-container .footer-logo h1 span{
+    color: orangered;
+}
+
+footer .footer-container .footer-logo p{
+    font-size: 1.2rem;
+}
+
+footer .footer-container .footer-texts{
+    flex-basis: 60%;
+    display: flex;
+    margin-left: 20px;
+}
+
+footer .footer-container .footer-texts div{
+    margin-left: 120px;
+}
+
+footer .footer-container .footer-texts div h4{
+    font-size: 1.6rem;
+}
+
+footer .footer-container .footer-texts div p{
+    font-size: 1.1rem;
+}
